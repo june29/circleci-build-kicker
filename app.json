@@ -1,0 +1,28 @@
+{
+  "name": "CircleCI build kicker",
+  "keywords": [
+    "CircleCI"
+  ],
+  "env": {
+    "GITHUB_USER": {
+      "description": "Your GitHub account or organization"
+    },
+    "GITHUB_REPO": {
+      "description": "Your GitHub repository name"
+    },
+    "BRANCH": {
+      "value": "master"
+    },
+    "CIRCLECI_TOKEN": {
+      "description": "CircleCI: Project Setting -> API Permissions"
+    },
+    "SPECIAL_ENV": {
+      "description": "Kick CircleCI build with this parameter"
+    },
+    "TZ": {
+      "description": "Set your timezone",
+      "value": "Asia/Tokyo"
+    }
+  },
+  "addons": ["scheduler:standard"]
+}
